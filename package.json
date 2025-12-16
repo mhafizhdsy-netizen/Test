@@ -1,0 +1,35 @@
+{
+  "name": "animasu-api",
+  "version": "1.0.0",
+  "description": "Animasu API adalah Unofficial API yang menyediakan data series Anime dan Movie dari situs Web animasu.cc beserta Link Streaming dengan Subtitle Indonesia.",
+  "main": "./src/api/api.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel-build": "echo running"
+  },
+  "author": "Abizar Reyfan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.0.0-rc.12",
+    "compose-middleware": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.3",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">= 18.x",
+    "npm": ">= 10.4.x"
+  }
+}
