@@ -2,7 +2,7 @@ const getCards = (body) => {
 
   const cards = [];
 
-  body('div.listupd div.bs').each((index, element) => {
+  body('div.listupd div.listupd_custompage div.bs').each((index, element) => {
     const el = body(element);
     const name = el.find('div.bsx div.tt').text().trim();
     const slug = el.find('div.bsx a').attr('href').split('/')[4];
