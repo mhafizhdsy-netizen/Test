@@ -4,7 +4,7 @@ const { getCards, getPaginationButton, getPaginationCount } = require('./helpers
 
 const ongoingSeries = async (page) => {
   try {
-    const res = await fetch(`${url.BASE_URL}/sedang-tayang/?halaman=${page}`);
+    const res = await fetch(`${url.BASE_URL}/anime-sedang-tayang-terbaru/?halaman=${page}`);
     const body = await res.text();
     const $ = cheerio.load(body);
     const data = {
