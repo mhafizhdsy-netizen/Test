@@ -168,7 +168,7 @@ const search = async (keyword, page) => {
 
 const genre = async (slug, page) => {
   try {
-    const res = await fetch(`${url.BASE_URL}/genre/${slug}/page/${page}`);
+    const res = await fetch(`${url.BASE_URL}/kumpulan-genre-anime-lengkap/${slug}/page/${page}`);
     const body = await res.text();
     const $ = cheerio.load(body);
     const data = {
@@ -208,7 +208,7 @@ const characterType = async (slug, page) => {
 
 const movies = async (page) => {
   try {
-    const res = await fetch(`${url.BASE_URL}/movie/?halaman=${page}`);
+    const res = await fetch(`${url.BASE_URL}/anime-movie/?halaman=${page}`);
     const body = await res.text();
     const $ = cheerio.load(body);
     const data = {
